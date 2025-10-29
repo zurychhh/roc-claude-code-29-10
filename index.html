@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind Config -->
     <script>
@@ -60,26 +60,39 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
-        <div class="container mx-auto text-center">
-            <h1 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
-                Transform Your Business
-                <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-vivid-purple to-blue-500 glow-text">
-                    With Expert Consulting
-                </span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                We deliver innovative solutions that drive growth and unlock your business potential
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2D3142]">
+
+        <!-- Floating Gradient Shapes (4 shapes - position absolute) -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 max-w-5xl mx-auto px-8 text-center">
+
+            <!-- Badge -->
+            <div class="badge">CRM & MARKETING AUTOMATION EXPERT</div>
+
+            <!-- Headline with gradient -->
+            <h1 class="headline">I double revenue from owned channels through CRM & Marketing Automation</h1>
+
+            <!-- Subheadline -->
+            <p class="subheadline">ROI-driven approach proven with Allegro, Booksy, and Accenture. I combine technical expertise with business strategy to turn automation into your #1 revenue driver.</p>
+
+            <!-- CTA Button -->
+            <button class="cta-button">Book Free Consultation →</button>
+
+            <!-- Credibility Line -->
+            <p class="credibility">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Join 15+ companies that transformed their CRM & automation
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-gradient-to-r from-vivid-purple to-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-vivid-purple/50 transition-all glow-button">
-                    Get Started
-                </button>
-                <button class="border-2 border-vivid-purple px-8 py-4 rounded-lg font-semibold text-lg hover:bg-vivid-purple/10 transition-all">
-                    Learn More
-                </button>
-            </div>
+
         </div>
     </section>
 
