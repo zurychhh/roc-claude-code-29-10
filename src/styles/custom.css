@@ -1,0 +1,90 @@
+/* Custom Styles for Consulting Website */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glow Effects */
+.glow-text {
+    text-shadow: 0 0 20px rgba(123, 44, 191, 0.5),
+                 0 0 40px rgba(123, 44, 191, 0.3);
+}
+
+.glow-button {
+    box-shadow: 0 0 20px rgba(123, 44, 191, 0.4);
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 30px rgba(123, 44, 191, 0.6),
+                0 0 60px rgba(123, 44, 191, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2D3142;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7B2CBF;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9333ea;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* High Contrast Text */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+
+/* Gradient Text Animation */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}

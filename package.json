@@ -1,0 +1,20 @@
+{
+  "name": "consulting-website",
+  "version": "1.0.0",
+  "description": "One-page consulting website with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --host=0.0.0.0",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "consulting",
+    "tailwind",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
